@@ -1,0 +1,52 @@
+body {
+  font-family: "微软雅黑";
+}
+
+.article-type-wrapper {
+  display: none !important;
+}
+
+.blog-page {
+  padding-top: 12px;
+}
+
+.nav-links div a,
+.nav-links div div {
+  font-size: 16px;
+}
+
+header.title {
+  width: 100%;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+header.title a {
+  display: block;
+}
+
+.page.blog .blog-home {
+  max-width: 1024px !important;
+}
+
+.blog-hero h1 {
+  padding: 5px 10px;
+  background-color: #333;
+}
+
+.blog-hero p {
+  text-shadow: #000 2px 2px 2px;
+}
+
+span[property="headline"] {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+div.excerpt p + h2 {
+  padding-top: 20px;
+}
+
+aside#toc {
+  padding-left: 80px;
+}
