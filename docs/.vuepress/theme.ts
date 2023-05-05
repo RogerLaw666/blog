@@ -43,7 +43,7 @@ export default hopeTheme({
       sidebar: false,
 
       footer:
-        'Copyright © 2021-2022 roger | <a href="https://beian.miit.gov.cn/">蜀ICP备2021031381号-1</a>',
+        'Copyright © 2021-2023 roger | <a href="https://beian.miit.gov.cn/">蜀ICP备2021031381号-1</a>',
 
       displayFooter: true,
 
@@ -71,18 +71,10 @@ export default hopeTheme({
 
     copyCode: { duration: 1000, showInMobile: true },
 
-    comment: {
-      provider: "Waline",
-      serverURL: "https://comment.blog.luojia.work",
-      dark: "auto",
-      copyright: false,
-      pageSize: 10,
-    },
-
     mdEnhance: false,
 
     seo: {
-      canonical: "https://www.luojia.work/",
+      canonical: "https://luojia.work/",
     },
   },
 });
