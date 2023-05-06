@@ -30,13 +30,14 @@ header.title a {
 }
 
 .blog-hero h1 {
-  padding: 5px 10px;
-  background-color: #333;
+  display: none;
+  // padding: 5px 10px;
+  // background-color: #333;
 }
 
-.blog-hero p {
-  text-shadow: #000 2px 2px 2px;
-}
+// .blog-hero p {
+//   text-shadow: #000 2px 2px 2px;
+// }
 
 span[property="headline"] {
   font-size: 1.75rem;
@@ -53,4 +54,8 @@ aside#toc {
 
 code {
   background: none;
+}
+
+aside.blog-info-wrapper {
+  margin-top: 8px;
 }
