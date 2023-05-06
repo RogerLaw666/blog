@@ -1,4 +1,7 @@
 import { navbar } from "vuepress-theme-hope";
+import { inject } from "@vercel/analytics";
+
+inject();
 
 export const zh = navbar([
   "/",
