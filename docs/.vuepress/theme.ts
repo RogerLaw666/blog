@@ -1,7 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import * as navbar from "./navbar";
 
-const hostname = process.env.HOSTNAME || "https://www.luojia.work";
+const hostname = process.env.HOSTNAME || "https://luojia.work";
 
 export default hopeTheme({
   hostname,
