@@ -1,10 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@vercel/analytics': ^1.0.1
   '@vuepress/client': 2.0.0-beta.61
   vue: ^3.2.47
   vuepress: 2.0.0-beta.61
   vuepress-theme-hope: 2.0.0-beta.205
+
+dependencies:
+  '@vercel/analytics': 1.0.1
 
 devDependencies:
   '@vuepress/client': 2.0.0-beta.61
@@ -1870,6 +1874,10 @@ packages:
   /@types/web-bluetooth/0.0.17:
     resolution: {integrity: sha512-4p9vcSmxAayx72yn70joFoL44c9MO/0+iVEBIQXe3v2h2SiAsEIo/G5v6ObFWvNKRFjbrVadNf9LqEEZeQPzdA==}
     dev: true
+
+  /@vercel/analytics/1.0.1:
+    resolution: {integrity: sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow==}
+    dev: false
 
   /@vitejs/plugin-vue/4.2.1_vite@4.1.4+vue@3.2.47:
     resolution: {integrity: sha512-ZTZjzo7bmxTRTkb8GSTwkPOYDIP7pwuyV+RV53c9PYUouwcbkIZIvWvNWlX2b1dYZqtOv7D6iUAnJLVNGcLrSw==}
