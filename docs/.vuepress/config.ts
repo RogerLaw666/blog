@@ -1,8 +1,5 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme";
-import { inject } from "@vercel/analytics";
-
-inject();
 
 const base = (process.env.BASE as "/" | `/${string}/`) || "/";
 
