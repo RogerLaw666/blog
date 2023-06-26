@@ -1,0 +1,62 @@
+---
+title: vue3详细笔记6 - 新的组件
+date: 2022-06-13
+category:
+  - vue
+tag:
+  - vue3
+prev: vue3详细笔记5 - 其他 Composition API
+next: vue详细笔记7 - 其他
+---
+
+## 1.Fragment
+
+- 在 Vue2 中: 组件必须有一个根标签
+- 在 Vue3 中: 组件可以没有根标签, 内部会将多个标签包含在一个 Fragment 虚拟元素中
+- 好处: 减少标签层级, 减小内存占用
+
+## 2.Teleport
+
+- 什么是 Teleport？—— `Teleport` 是一种能够将我们的**组件 html 结构**移动到指定位置的技术。
+
+  ```vue
+  <teleport to="移动位置">
+    <div v-if="isShow" class="mask">
+      <div class="dialog">
+        <h3>我是一个弹窗</h3>
+        <button @click="isShow = false">关闭弹窗</button>
+      </div>
+    </div>
+  </teleport>
+  ```
+
+## 3.Suspense
+
+- 等待异步组件时渲染一些额外内容，让应用有更好的用户体验
+
+- 使用步骤：
+
+  - 异步引入组件
+
+    ```js
+    import { defineAsyncComponent } from "vue";
+    const Child = defineAsyncComponent(() => import("./components/Child.vue"));
+    ```
+
+  - 使用`Suspense`包裹组件，并配置好`default` 与 `fallback`
+
+    ```vue
+    <template>
+      <div class="app">
+        <h3>我是App组件</h3>
+        <Suspense>
+          <template v-slot:default>
+            <Child />
+          </template>
+          <template v-slot:fallback>
+            <h3>加载中.....</h3>
+          </template>
+        </Suspense>
+      </div>
+    </template>
+    ```
