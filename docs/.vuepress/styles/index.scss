@@ -2,6 +2,11 @@ body {
   font-family: "微软雅黑";
 }
 
+body p,
+body li {
+  color: #444444;
+}
+
 .article-type-wrapper {
   display: none !important;
 }
@@ -29,19 +34,32 @@ header.title a {
   max-width: 1024px !important;
 }
 
-.blog-hero h1 {
+.vp-blog-hero h1 {
   display: none;
-  // padding: 5px 10px;
-  // background-color: #333;
 }
 
-// .blog-hero p {
-//   text-shadow: #000 2px 2px 2px;
-// }
-
 span[property="headline"] {
-  font-size: 1.75rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.vp-article-excerpt h2 {
+  font-size: 1.35em;
+}
+
+.vp-article-excerpt h3 {
+  font-size: 1.2em;
+}
+
+.vp-page-title h1 {
+  font-size: 1.5rem;
+}
+
+.theme-hope-content h2 {
+  font-size: 1.35rem;
+}
+
+.theme-hope-content h3 {
+  font-size: 1.2rem;
 }
 
 div.excerpt p + h2 {
