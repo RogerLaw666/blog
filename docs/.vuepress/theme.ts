@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://luojia.work",
   },
 
-  // pure: true,
+  pure: true,
 
   darkmode: "toggle",
 
@@ -64,10 +64,10 @@ export default hopeTheme({
 
     copyright: true,
 
-    // pwa: {
-    //   showInstall: true,
-    //   favicon: "/images/icons/logo.ico",
-    // },
+    pwa: {
+      showInstall: true,
+      favicon: "/images/icons/logo.ico",
+    },
 
     copyCode: { duration: 1000, showInMobile: true },
 
